@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { SpanItem } from '../../../styles/Contacts-List-Item.styled';
+import { SpanItem } from './ContactsListItem.styled';
 
 import { useDeleteContactMutation } from '../../redux/contacts';
-import { Button, Item } from '../../../styles/contacts.styled';
+import { Button, Item } from '../ContactsList/Contacts.styled';
 
-const ContactListItem = ({ id, name, number }) => {
+const ContactsListItem = ({ id, name, number }) => {
   const [deleteContact, { isLoading: isDeleting }] = useDeleteContactMutation();
 
   return (
@@ -19,4 +19,4 @@ const ContactListItem = ({ id, name, number }) => {
   );
 };
 
-export default ContactListItem;
+export default ContactsListItem;

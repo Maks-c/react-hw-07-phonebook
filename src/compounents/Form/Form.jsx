@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { useCreateContactMutation, useGetContactsQuery } from '../redux/contacts';
+import { useCreateContactMutation, useGetContactsQuery } from '../../redux/contacts';
 import { toast } from 'react-toastify';
-import { Button } from '../../styles/contacts.styled';
+import { Button } from '../ContactsList/Contacts.styled';
 
 
 function Form(){

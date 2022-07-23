@@ -1,10 +1,10 @@
-import Form from '../form';
-import Contacts from '../contacts';
-import Filter from '../filter';
+import Form from '../compounents/Form';
+import ContactsList from '../compounents/ContactsList';
+import Filter from '../compounents/Filter';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 
-import { AppWrapper, MainHead } from '../../styles/app.Styled';
+import { AppWrapper, MainHead } from './App.styled';
 
 const App = () => {
   return (
@@ -12,7 +12,7 @@ const App = () => {
       <MainHead>Phonebook</MainHead>
       <Form />
       <h2>Contacts</h2>
-      <Contacts />
+      <ContactsList />
       <Filter />
       <ToastContainer theme='colored' autoClose={500} />
     </AppWrapper>
